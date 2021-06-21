@@ -1,0 +1,714 @@
+body{
+    background-color: rgb(180, 144, 99);
+}
+
+/* NAVBAR */
+
+
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 0px 5px rgb(134, 34, 34);
+    padding-bottom: 1em;
+    padding-top:2em;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 10px
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Odibee Sans';
+    font-weight: bold;    
+}
+
+.logo{
+    width: 5%;
+    border-radius: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    z-index: 2;  
+}
+
+.boton-a{
+    text-decoration: none;
+    color:white; 
+}
+
+.boton-a:hover{
+color: rgb(180, 144, 99);
+transition: 500ms;
+}
+
+.navbar li a:hover{
+    color: #bd1200;
+    transition: 1s;
+}
+
+.carrusel{
+    padding-top: 0.3em;
+}
+
+/*PORTADA*/
+
+.portada-div{
+    margin-top: 0.2%;
+    height: 0%;
+}
+
+.contenedor-titulo{
+    display: flex; 
+    margin-bottom: 1em;
+}
+
+.portada-titulo{
+    position: absolute;
+    z-index: 2;
+    font-size: 6em;
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    margin-top: 11%;
+    margin-left: 0.5em;
+    font-family: 'Anton', sans-serif;
+    text-shadow: -3px -3px 1px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.portada-titulo:hover{
+    color:rgb(134, 34, 34);   
+    transform: rotate(360deg);
+}
+
+span{
+    font-size: 0.5em;
+    text-align: center;
+    margin-left: 3em;
+}
+
+.portada{
+    width: 100%;
+    position: relative;
+}
+
+.negro-portada{
+    position: absolute; 
+    height: 83%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+/* QUIENES SOMOS */
+
+.img-quienes-somos{
+    width: 40%;
+    border: 5px solid rgb(180, 144, 99);
+    position: relative;
+    margin-bottom: 2em;  
+}
+
+.quienes-somos{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    margin-bottom: 1em;
+    background-image: url(imagenes/quienes-somos-fondo.jpg);
+    background-position: cover;
+    background-size: 50%;
+    background-repeat: repeat-x;
+    
+}
+
+.card-quienes-somos{
+    position: absolute;
+    color: white;
+    margin-top: 15%;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 30%;
+}
+
+.titulo-quienes-somos{
+    text-align: center; 
+    color: rgb(180, 144, 99);
+    font-weight: bold;
+}
+
+.texto-quienes-somos{
+    margin-top: 5%;
+    font-size: 25px;
+    color: white;
+}
+
+/*TIPOS DE CERVEZA (CARDS)*/
+
+.card-cerveza-contenedor{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-cerveza{
+    width: 20%;
+    position: relative;
+    cursor: pointer;
+}
+
+.cerveza-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-cerveza:hover{
+transform: scale(1.1,1.1);
+transition: 500ms;
+z-index: 1;
+}
+
+.card-cerveza:hover .text-cerveza{
+    opacity: 1;
+}
+
+.text-cerveza{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(134, 85, 45, 0.288);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.text-cerveza h2{
+    color: white;
+    text-align: center;
+    margin:20%
+}
+
+/*FORMULARIO/CONTACTO*/
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {   
+    color: #000000;
+    font-family: 'Odibee Sans';
+    font-size: 15px;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 1%;
+    color: white;
+    height: 90%;
+    margin: 1%;
+    clip-path: circle(50%);
+}
+
+form {
+    width: 28em;
+    padding: 15px;
+    border: 3px solid rgba(0, 0, 0, 0.336);
+    background-color: rgba(134, 34, 34, 0.247);
+    margin-left: 5em;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#200404;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.contacto{
+    font-weight: bold;
+    border: 8px solid rgb(134, 34, 34);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 5em;
+    margin-left: 2em;
+    text-align: center;
+}
+
+.img-contacto{
+    position: relative;
+    border: 10px solid rgb(134, 34, 34);    
+}
+
+.contacto-absoluto{
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 4%;
+}
+
+.contenedor-titulo-contacto{
+    text-align: center;
+    background-image: url(imagenes/fondo.jpg);
+    padding: 1em;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-contacto{
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    border: 5px solid rgb(180, 144, 99);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* CERVEZA*/
+
+.titulo-cerveza{
+    border: 5px solid rgb(180, 144, 99);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 2em;
+    height: 1.5em;
+    padding: 1%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    transition: 500ms ease-in-out;
+}
+
+.titulo-cerveza:hover{
+    border: 5px solid rgb(255, 72, 0);
+    font-size: 6.5em;
+
+}
+
+.titulo-cerveza-centro{
+    display: flex;
+    justify-content: center; 
+    background-image: url(imagenes/fondo.jpg);
+    background-position: center;
+    height: 35em;    
+    margin-bottom: 1em;
+} 
+
+/*CARRUSEL*/
+
+.carrusel-contenedor-titulo{
+    text-align: center;
+    background-image: url(imagenes/fondo.jpg);
+    padding: 1em;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-titulo:hover{
+    border: 5px solid rgb(255, 72, 0);
+}
+    
+
+.carrusel-titulo{
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    border: 5px solid rgb(180, 144, 99);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.carrusel1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 1%;
+}
+
+.carrusel{
+    width: 80%;
+}
+
+/* FOOTER*/
+
+.footer {
+    width: 100%;
+    height: 10em;
+    padding: 1%;
+    background-color: black;
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --whatsapp: #2fbe2f; 
+}
+
+.redes-container{
+    display: flex;
+    height: 50%;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 1em;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 15px;
+    background: #333;
+    color: #fff;
+    line-height: 5em;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.facebook:hover{
+    background: var(--facebook);
+}
+
+.instagram:hover{
+    background: var(--instagram);
+}
+
+.twitter:hover{
+    background: var(--twitter);
+}
+
+.whatsapp:hover{
+    background: var(--whatsapp);
+}
+
+.contenedor-footer{
+    text-align: center;
+}
+
+.contenedor-footer h6{
+    color: white
+}
+
+/*MEDIA QUARIES*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    /* NAVBAR */
+    
+    .navbar li{
+        padding: 5px
+    }
+    
+    .navbar li a{
+        font-size: 13px;    
+    }
+    
+    .logo{
+        width: 15%;
+        border-radius: 100%;
+    }
+                
+    
+    /*PORTADA*/
+    
+    .negro-portada{
+        height: 41%;
+    }
+    
+    /* QUIENES SOMOS */
+    
+    .img-quienes-somos{
+        width: 50%;
+        margin-bottom: 0.5em;  
+    }
+    
+    .quienes-somos{
+        padding-top: 0.2em;
+    }
+    
+    .card-quienes-somos{
+        margin-top: 3%;
+    }
+     
+    .texto-quienes-somos{
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    
+    /*TIPOS DE CERVEZA (CARDS)*/
+        
+    .text-cerveza h2{
+        font-size: 16px;
+    }
+    
+    /*FORMULARIO/CONTACTO*/
+    
+
+    .formulario {   
+        padding-top: 9%;
+        height: 100%;
+
+    }
+    
+    form {
+        width: 22em;
+        padding: 15px;
+        margin-left: 2em;
+    }
+     
+    input, textarea {
+        width:300px;
+        height:30px;
+        padding:10px;
+        margin-top:5px;
+        font-size:13px;
+    }
+     
+    textarea {
+        height:150px;
+    }
+         
+    .contacto{
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    
+    .img-contacto{
+        height: 90%;
+    }
+    
+    .contacto-absoluto{
+        margin-top: 6%;
+    }
+    
+    /* CERVEZA*/
+    
+    .titulo-cerveza{
+        margin-top: 2.5em;
+        font-size: 3em;
+    }
+    
+    .titulo-cerveza:hover{
+        border: 5px solid rgb(255, 72, 0);
+        font-size: 6.5em;
+    
+    }
+    
+    .titulo-cerveza-centro{
+        height: 20em;    
+    } 
+    
+    
+    /* FOOTER*/
+    
+    .footer {
+    height: 7em;
+    }
+}
+
+@media screen and (max-width: 360px){
+            
+    .navbar li{
+        padding: 1px;
+    }
+    
+    .navbar li a{
+        padding: 3px;  
+    }
+    
+    .logo{
+        width: 30%;
+    }
+    
+    .boton-a{
+        font-size: 11px;
+    }
+
+    button{
+        margin: 5px;
+    }
+    
+    /*PORTADA*/
+        
+    .contenedor-titulo{
+        display: flex; 
+        margin-bottom: 1em;
+    }
+    
+    .portada-titulo{
+        font-size: 3em;
+        margin-top: 15%;
+    }
+        
+    span{
+        font-size: 0.5em;
+        text-align: center;
+        margin-left: 3em;
+    }
+    
+    .portada{
+        height: 200px;
+    }
+    
+    .negro-portada{ 
+        height: 35.5%;
+    }
+    
+    /* QUIENES SOMOS */
+    
+    .quienes-somos{
+        padding-top: 2em;
+        background-image: none;
+    }
+
+    .img-quienes-somos{
+        width: 100%;
+        margin-bottom: 2em;  
+    }
+    
+    .card-quienes-somos{
+        margin-top: 10%;
+        width: 80%;
+    }
+    
+    .texto-quienes-somos{
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    
+    /*TIPOS DE CERVEZA (CARDS)*/
+        
+    .card-cerveza{
+        width: 60%;
+        padding: 5px;
+    }
+                
+    /*FORMULARIO/CONTACTO*/
+    
+    label {
+        margin-top:1px;
+    }
+    
+    .formulario {   
+        font-size: 09px;
+        height: 90%;
+
+    }
+    
+    form {
+        width: 33em;
+        padding: 15px;
+        margin-left: 1.5em;
+    }
+     
+    input, textarea {
+        width:260px;
+        height:27px;
+    }
+     
+    textarea {
+        height:100px;
+    }
+     
+    #submit {
+        margin-top:15px; 
+    }
+    
+    .contacto{
+        font-size: 0;
+        border: 0;
+    }
+    
+    .img-contacto{
+        border: 0px;    
+    }
+    
+    .contacto-absoluto{
+        margin-top: 50%;
+        margin-right: 4%;
+    }
+    
+    .contenedor-titulo-contacto{
+        background-position: right;
+    }
+    
+    .titulo-contacto{
+        font-size: 2em;
+    }
+    
+    /* CERVEZA*/
+    
+    .titulo-cerveza{
+        font-size: 2em;
+        height: 2.8em;
+        text-align: center;
+    }
+    
+    .titulo-cerveza:hover{
+        border: 5px solid rgb(255, 72, 0);
+        font-size: 6.5em;
+    }
+    
+    .titulo-cerveza-centro{
+        height: 15em;    
+        margin-bottom: 1em;
+    } 
+    
+    /*CARRUSEL*/
+    
+    .carrusel-contenedor-titulo{
+        font-size: 10px;
+        background-image: url(imagenes/fondo.jpg);
+        background-position: right;
+    }
+    
+    /* FOOTER*/
+    
+    .footer {
+        height: 8em;
+    }
+    
+    .redes-container ul li{
+        width: 2.5em;
+        height: 3em;
+    }
+}
+

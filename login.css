@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagenes/login.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.form-login{
+    width: 400px;
+    background-color: rgba(180, 144, 99, 0.486);
+    padding: 30px;
+    margin: auto;
+    margin-top: 14em;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-login h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    background-color: rgba(180, 144, 99, 0.486);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(197, 145, 34);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.controls::placeholder{
+    color: white;
+}
+
+.form-login p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.somos-a{
+    color: white;
+    text-decoration: none;
+}
+
+.somos-a:hover{
+    text-decoration: underline;
+}
+
+.form-login .botons{
+    width: 100%;
+    background-color: rgb(134, 34, 34);
+    padding: 12px;
+    border: none;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    .form-login{
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 360px){
+    
+    body{
+        background-repeat: no-repeat;
+        background-size: 250%;
+    }
+    
+    .form-login{
+        width: 300px;
+        margin-top: 13em;
+    }
+}
